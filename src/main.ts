@@ -17,7 +17,7 @@ async function bootstrap() {
   );
 
   app.setGlobalPrefix('/api');
-  app.enableCors({ origin: 'https://portfolio-ssr.onrender.com' });
+  app.enableCors({ origin: 'https://shoeb.netlify.app' });
 
   await app.register(compression, { encodings: ['gzip', 'deflate'] });
   await app.register(helmet);
